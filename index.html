@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-blue-50 text-gray-800 font-sans leading-relaxed">
+
+  <!-- HERO -->
+  <section class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-100 to-blue-200 px-4 text-center pt-20">
+    <!-- Profil -->
+    <img src="images/jenyPhoto.jpg" alt="Jeny" class="w-32 h-32 rounded-full shadow-lg mb-4 object-cover" />
+
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-blue-900">Jeny Fattahul Sisca Anjar Aeni</h1>
+    <p class="text-base sm:text-lg mb-2">Aspiring Data Engineer</p>
+    <p class="text-sm sm:text-base text-blue-800 mb-6">Python • SQL • PostgreSQL • ETL</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://github.com/jenyfattahul" target="_blank"
+         class="px-5 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition duration-200 text-sm sm:text-base">
+         GitHub
+      </a>
+      <a href="https://linkedin.com/in/jenyfattahul target="_blank"
+         class="px-5 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition duration-200 text-sm sm:text-base">
+         LinkedIn
+      </a>
+      <a href="CVjeny.pdf" target="_blank"
+         class="px-5 py-2 bg-blue-400 text-white rounded-lg shadow hover:bg-blue-500 transition duration-200 text-sm sm:text-base">
+         Download CV
+      </a>
+    </div>
+
+    <!-- Scroll down -->
+    <a href="#about" class="mt-10 inline-flex flex-col items-center text-blue-700 hover:text-blue-900 group">
+    <span class="text-sm font-medium tracking-wide mb-1 transition duration-300 group-hover:underline">
+        Scroll down
+    </span>
+    <svg xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 animate-bounce transition-transform duration-300 group-hover:scale-110"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7" />
+    </svg>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+<section id="about" class="py-16 px-4 max-w-3xl mx-auto text-center">
+    <h2 class="text-2xl sm:text-3xl font-semibold mb-6 text-blue-800">About Me</h2>
+    <p class="text-sm sm:text-base md:text-lg leading-relaxed text-justify text-gray-700">
+      I’m a data enthusiast currently studying data science and building real-world systems using Python and SQL.
+      My strength lies in understanding backend data flow, building ETL pipelines, and collaborating in technical teams.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="py-16 px-4 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl sm:text-3xl font-semibold mb-6 text-blue-800">Skills</h2>
+      <div class="flex flex-wrap justify-center gap-4 text-sm sm:text-base">
+        <span class="bg-blue-100 border px-4 py-2 rounded shadow text-blue-900">Python</span>
+        <span class="bg-blue-100 border px-4 py-2 rounded shadow text-blue-900">SQL</span>
+        <span class="bg-blue-100 border px-4 py-2 rounded shadow text-blue-900">PostgreSQL</span>
+        <span class="bg-blue-100 border px-4 py-2 rounded shadow text-blue-900">Pandas</span>
+        <span class="bg-blue-100 border px-4 py-2 rounded shadow text-blue-900">ETL</span>
+        <span class="bg-blue-100 border px-4 py-2 rounded shadow text-blue-900">Git</span>
+        <span class="bg-blue-100 border px-4 py-2 rounded shadow text-blue-900">Figma</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="py-16 px-4 max-w-5xl mx-auto bg-blue-50">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-center mb-10 text-blue-800">Projects</h2>
+    <div class="grid gap-8 md:grid-cols-2">
+
+      <!-- Project 1 -->
+      <div class="border rounded-lg p-6 shadow bg-white">
+        <img src="images/course-predictor.png" alt="Screenshot Course Difficulty Predictor"
+             class="rounded-lg shadow mb-4 w-full h-48 object-cover" />
+        <h3 class="text-lg sm:text-xl font-bold mb-2 text-gray-900">Course Difficulty Predictor</h3>
+        <p class="text-sm sm:text-base mb-2 text-gray-700">
+          Predicts course difficulty using student activity logs with Random Forest model.
+        </p>
+        <p class="text-xs text-gray-500 mb-4">Tools: Python, Django, PostgreSQL, Random Forest</p>
+        <a href="https://github.com/jenyfattahul" target="_blank"
+           class="text-blue-600 hover:underline text-sm">View on GitHub</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="border rounded-lg p-6 shadow bg-white">
+        <img src="images/revenue-cycle.png" alt="Screenshot Revenue Cycle"
+             class="rounded-lg shadow mb-4 w-full h-48 object-cover" />
+        <h3 class="text-lg sm:text-xl font-bold mb-2 text-gray-900">Revenue Cycle System</h3>
+        <p class="text-sm sm:text-base mb-2 text-gray-700">
+          Django-based billing system for managing subscriptions and payments.
+        </p>
+        <p class="text-xs text-gray-500 mb-4">Tools: Python, Django, PostgreSQL, Chart.js</p>
+        <a href="https://github.com/jenyfattahul" target="_blank"
+           class="text-blue-600 hover:underline text-sm">View on GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="py-16 px-4 text-center bg-white">
+    <h2 class="text-2xl sm:text-3xl font-semibold mb-4 text-blue-800">Contact</h2>
+    <p class="text-sm sm:text-base text-gray-700">Email: <a href="mailto:ella@example.com" class="text-blue-600 hover:underline">jenyfattahul@gmail.com</a></p>
+    <p class="text-sm sm:text-base text-gray-700">LinkedIn: <a href="https://linkedin.com/in/jenyfattahul" class="text-blue-600 hover:underline">/jenyfattahul</a></p>
+  </section>
+
+</body>
+</html>
